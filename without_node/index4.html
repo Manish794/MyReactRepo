@@ -3,7 +3,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>React Application</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"></script>
@@ -27,11 +26,9 @@
         }
       }
 
-      // get the DOM container
-      var rootElement = document.getElementById("root");
-
-      // render the React Component in the DOM container
-      ReactDOM.render(<div>
+// render the React element in the DOM container
+const root = ReactDOM.createRoot(document.getElementById("root"));
+ root.render(<div>
          <HelloWorld /> 
          <HelloWorld />
          <HelloWorld />

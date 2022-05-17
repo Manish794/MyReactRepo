@@ -16,7 +16,8 @@ var h1Element = <h1>Hello Guys. Welcome to React Application</h1>;
 var rootElement = document.getElementById('root');
 
 // render the React element in the DOM container
-ReactDOM.render(h1Element, rootElement);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(h1Element);
 
 </script>
 </body>
