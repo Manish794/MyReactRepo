@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>First React App with CDN and Old style</title>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+<div id='root'></div>
+
+<script>
+
+// create a React element
+ var h1Element = React.createElement('h1', {style : {color: "blue"}}, 'Hello Guys. Welcome to React Application');
+
+ // get the DOM container
+ var rootElement = document.getElementById('root');
+
+ // render the React element in the DOM container
+ ReactDOM.render(h1Element, rootElement);
+
+</script>
+</body>
+<html>

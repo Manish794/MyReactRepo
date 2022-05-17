@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>First React Component without JSX</title>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+<div id='root'></div>
+<script>
+
+// create a React Compoment
+class HelloWorld extends React.Component {
+ render() {
+    return React.createElement('h1', null, 'Hello Guys. Welcome to React Application');
+ }
+}
+
+// create a React element
+var helloElement = React.createElement(HelloWorld, null);
+ 
+ // get the DOM container
+var rootElement = document.getElementById('root');
+
+ // render the React Component in the DOM container
+ ReactDOM.render(helloElement, rootElement);
+
+</script>
+</body>
+<html>
