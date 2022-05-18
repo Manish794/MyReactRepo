@@ -1,17 +1,23 @@
 
 import React from 'react';
 import ToggleStudentDetails from './ToggleStudentDetails';
+import PropTypes from 'prop-types';
 
 class Student extends React.Component {
+    static propTypes = {
+        sid: PropTypes.number.isRequired,
+        sname: PropTypes.string.isRequired,
+        email: PropTypes.string,
+        phone: PropTypes.number.isRequired
+    };
+
+    static defaultProps = {
+        email: 'user@gmail.com'
+    };
+
     constructor(props) {
         super(props)
         this.state = {
-            stud: {
-                sid: 102,
-                sname: 'Rahul Kumar',
-                email: 'rahul@gmail.com',
-                phone: 88888888
-            },
             showStudDetails: true
         };
     }
@@ -27,11 +33,11 @@ class Student extends React.Component {
         var studDetails = null;
         if (this.state.showStudDetails) {
             studDetails = (<div className='border border-primary w-50 text-center text-primary'>
-                <h4> Component with ES6 Style </h4>
-                <br></br>Id : {this.state.stud.sid}
-                <br></br>Name : {this.state.stud.sname}
-                <br></br>Email : {this.state.stud.email}
-                <br></br>Phone : {this.state.stud.phone}
+                <h4> Component with ES7 Style </h4>
+                <br></br>Id : {this.props.sid}
+                <br></br>Name : {this.props.sname}
+                <br></br>Email : {this.props.email}
+                <br></br>Phone : {this.props.phone}
             </div>);
         }
         return (
