@@ -3,14 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import CommitsContainer from './CommitsContainer';
-import MyCommitsContainer from './MyCommitsContainer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
     <CommitsContainer />
-    <br/>
-    <MyCommitsContainer/>
   </div>
 );
 
