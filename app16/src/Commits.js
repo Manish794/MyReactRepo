@@ -1,7 +1,7 @@
 import { Component } from 'react'
 
+// Presentational Component
 class Commits extends Component {
-
     render() {
         return (
             <table className='table table-primary'>
