@@ -1,0 +1,18 @@
+.myclass { 
+  border: 2px solid red; 
+  border-radius: 5px; 
+ }
+
+.myclass1{ 
+  font-size: 25px; 
+  color:red; 
+  text-align: center; 
+  font-family: Candara; 
+ } 
+ 
+ .myclass2{ 
+  font-size: 20px; 
+  color:blue; 
+  text-align: center; 
+  font-family: Candara; 
+ } 
